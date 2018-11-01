@@ -1,0 +1,32 @@
+.logo-img{
+	height: 40px;
+	width: 200px;
+	
+}
+.navbar{
+	background : #ffffff;
+	height:70px;
+}
+.nav-link{
+	font-size: 13px ;
+	font-weight: bold;
+}
+.active_nav-link:hover{
+	 border-bottom: 1px solid #910f14;
+	 
+	 
+}
+.active_nav-link{
+	 color: #000000  !important;
+	 display: block;
+  	 padding: 0.5rem 1rem;
+  	 font-size: 13px ;
+	 font-weight: bold;
+}
+#active_nav-link{
+	color: #910f14 !important;
+	display: block;
+    padding: 0.5rem 1rem;
+    font-size: 13px ;
+	font-weight: bold;
+}

@@ -1,0 +1,32 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.read-more{
+	background-color: #ffffff;
+	color :#802B00;
+	border: 2px solid #802B00;
+
+}
+.read-more:hover{
+	background-color: #ffffff;
+	color :#802B00;
+	border: 2px solid #802B00;
+	
+}
+.page-link:hover{
+	background-color:#910f14;
+}
+.page-item:hover{
+	background-color:#910f14;
+}
+.page-item.active .page-link{
+	background-color:#910f14;
+ 	border-color:#910f14;
+}
+.page-link{
+	color: #000000;
+}
+.social:hover{
+	color: #FF5500;
+}

@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<%= form_for :business ,url: business_services_path, html: { multipart: true } do |f| %>
+	            <p><%= f.label :title %></p>
+				<p><%= f.text_field :title, class: "form-control" %></p>
+				<p><%= f.label :text %></p>
+				<p><%= f.text_area :text, class: "form-control" %></p>
+				<p><%= f.label :category %></p>
+				<p><%= f.text_field :category, class: "form-control" %></p>
+				<p><%= f.label :photo %></p>
+				<p><%= f.file_field :photo %></p><br>
+				<p><%= f.label :video %></p>
+				<p><%= f.file_field :video %></p>
+				<p><%= f.submit %></p>
+			<% end %>
+		</div>
+	</div>
+</div>

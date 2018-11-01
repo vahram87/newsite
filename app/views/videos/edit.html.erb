@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row" style="min-height: 30rem">
+		<div class="col-md-9">
+			<%= form_for :video,url: videos_path,html: { multipart: true } do |f| %>
+				<p>
+					<%= f.label :title %>
+					<%= f.text_field :title ,class: "form-control" %>
+				</p>
+				<p>
+					<%= f.label :category %>
+					<%= f.text_field :category ,class: "form-control" %>
+				</p>
+				<p>
+					<%= f.label :clip %>
+					<%= f.file_field :clip ,class: "form-control" %>
+				</p>
+				<p><%= f.submit class: "btn btn-lg btn-success" %></p>
+			<% end %>
+		</div>
+		<div class="col-md-3">
+			
+		</div>
+	</div>
+</div>

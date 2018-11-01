@@ -1,0 +1,58 @@
+// Place all the styles related to the Business-services controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.business-row{
+	min-height:30rem;
+	padding-top:10px;
+	background-color:#000000;
+}
+.business-div{
+	border-left: solid 2px yellow; 
+	margin-top:4%;
+	height:99%;
+	
+}
+.bis-img{
+	height: 30%;
+	width: 100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bis-dr{
+	background-color:#000000;
+	color: #ffffff;
+	border: none;
+}
+
+.ul-bis>li>a{
+	color: #ffffff;
+}
+.ul-bis>li>a:hover{
+	color: yellow;
+}
+.ul-bis>li{
+	color: #ffffff;
+}
+.ul-bis>a{
+	color: #ffffff;
+}
+a:link {
+    text-decoration: none;
+}
+
+.business-title{
+	text-align:center;
+	color:#FFD400;
+}
+.business-image{
+    text-align:center;
+}
+.business-text{
+	text-align:center;
+	color:#FFD400;
+}
+.business-video{
+	text-align:center;
+}

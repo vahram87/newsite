@@ -1,0 +1,20 @@
+<head>
+	<%= display_meta_tags site: @video.title  %>
+</head>
+<div class="row" >
+	<div class="col-md-1"></div>
+	<div class="col-md-10 ">
+<p><strong><%= @video.title %></strong></p>
+<p>
+	<small><%= @video.created_at.strftime('%A %-b %-d,%Y | %l:%M %p')  %></small>
+</p>
+<p><%= @video.category %></p>
+<p>
+	<% if @video.clip.present? %>
+		<%= video_tag @video.clip,controls: true,type: "video/mp4",style: "width:500px;height:250px;" %>
+	<% end %>
+</p>
+<p><%= link_to "Back to Videos", videos_path ,class: "btn btn-md btn-info"%></p>
+  </div>
+  <div class="col-md-1"></div>
+</div>

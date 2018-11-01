@@ -1,0 +1,21 @@
+<head>
+	<%= display_meta_tags site: 'Business Services of Lawyers in Glendale, Los Angeles County, California' %>
+</head>
+<div class="container-fluid">
+<div class="row " style="background-color: #000000;">
+
+	<div class="col-md-4">
+		<h4 style="color:#ffffff; padding-top: 20px;">All Services</h4>
+		<% @businesses.each do |business|  %>
+		<ul class="ul-bis">
+			<li><%= link_to business.title,business_service_path(business) %> </li>
+		</ul>
+		<% end %>
+		
+	</div>
+	<div class="col-md-8 business-div">
+		<h4 style="color: #ffffff;text-align: center;">Los Angeles Business Law, Corporate Law, and Business Startup Attorneys</h4>
+		 <p style="color: #ffffff;padding-top: 10%;">Our business law attorneys are notable USC, UCLA, Berkeley Law alumni and focus on not merely providing businesses with sound legal advice. Our comprehensive business law practice includes both the transactional and the litigation aspects of business law. We advise and assist in the formation of entities such as corporation formation, partnerships, limited liability companies and limited liability partnerships. We also prepare and review business sale contracts, employment contracts, business contract disputes, and other business agreements. We are there for the life of the company, helping with business and tax filings and other compliance matters. Kaass Law offers alternative fee arrangements beyond just your average hourly rates, including fixed, capped, and hybrid fee arrangements.</p>
+	</div>
+</div>
+</div>

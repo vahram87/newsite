@@ -1,0 +1,17 @@
+<head>
+	<%= display_meta_tags site: 'About |Kaass Law ' %>
+</head>	
+			
+<div class="container-fluid">
+	<div class="row home-row2" style="min-height: 30rem;">
+		<div class="col-md-4 mek1">
+			<h1 style="color:#ffffff;">Experienced<br> Lawyers in<br> Glendale, Los Angeles, CA</h1>	 
+		</div>
+		<div class="col-md-5 mek">
+			<% @abouts.each do |about|  %>
+				<p style="color:#ffffff;"><%= about.title %></p>
+			<% end %>
+		</div>
+	</div>
+</div>
+

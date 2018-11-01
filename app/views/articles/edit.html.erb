@@ -1,0 +1,19 @@
+<h1>Edit Article</h1>
+<%= form_for @article  do |f|%>
+	<p>
+		<%= f.label :title %>
+		<%= f.text_field :title ,class: "form-control" %>
+	</p>
+	<p>
+		<%= f.label :photo %>
+		<%= f.file_field :photo ,class: "form-control" %>
+	</p>
+	<p>
+		<%= f.label :text %>
+		<%= f.text_area :text,class: "form-control"  %>
+	</p>
+	<p><%= f.submit class: "btn btn-lg btn-success" %></p>
+	<p>
+	<%= link_to "Back", articles_path ,class: "btn btn-md btn-info"%>
+	</p>
+<% end %>	

@@ -1,0 +1,25 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.contact{
+	background-color: #000000;
+	min-height:30rem;
+}
+
+.contact-div{
+	border-left: solid 2px yellow; 
+	margin-top:4%;
+	height:80%;
+	
+}
+.cont-div{
+	padding-top:10%;
+	background-color: #FFFFD4;
+}
+.cont-p{
+	text-align: center;
+	font-weight: bold;
+}

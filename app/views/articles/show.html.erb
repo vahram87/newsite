@@ -1,0 +1,43 @@
+<head>
+  <%= display_meta_tags title: @article.title  %>
+
+</head>
+<div class="container">
+<div class="row" style="min-height: 30rem;background-color: #FFFFD4;">
+	<div class="col-md-9 ">
+	<p><strong><%= @article.title %></strong></p>
+	<p><small><i class="fa fa-user-circle-o"></i>  Kaass Law <i class="fa fa-clock-o" aria-hidden="true"></i> <%= @article.created_at.strftime('%A %-b %-d,%Y | %l:%M %p')  %></small></p>
+	<p>
+		<% if @article.photo.present? %>
+				<%= image_tag @article.photo,style: "height:400px;width:700px;" %>
+			<% else %>
+				<%= image_tag "bis1.jpg" ,style: "width:70%,height:30%" %>
+		<% end %>
+	</p>	
+<p>
+	<%= @article.text %>
+</p>
+  </div>
+  <div class="col-md-3">
+  	<h5>CONTACT KAASS LAW</h5>
+		<p style="padding-top: 20px;color: #FF5500;">815 E. Colorado Suite #220 <br>
+			Glendale CA 91205<br>
+			(310) 943-1171<br>
+			info@kaass.com<br>
+			Open 24 Hours
+		</p>
+		<p>	
+			      <a class="fb-ic mr-3"href="https://www.facebook.com/KaassLaw/" target="_blank"><i class="fa fa-lg fa-facebook social"> </i></a>
+			      <a class="tw-ic mr-3" href="https://www.twitter.com/Kaass_Law/" target="_blank"><i class="fa fa-lg fa-twitter social"> </i></a>
+			      <a class="yp-ic mr-3" href="https://www.yelp.com/biz/kaass-law-glendale" target="_blank">
+					<i class="fa fa-yelp social"></i>
+				</a>
+			      <a class="ins-ic mr-3" href="https://www.instagram.com/kaass_law/" target="_blank"><i class="fa fa-lg fa-instagram social"> </i></a>
+      	</p>
+      	<p>
+			<iframe style="border: 0;width: 90%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.1370734224456!2d-118.24694934928684!3d34.14283508048595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c1044665d4e7%3A0x7de9808c32e4b4c6!2sKaass+Law!5e0!3m2!1sen!2sus!4v1536462756163" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+		</p>
+  </div>
+</div>
+</div>
+
